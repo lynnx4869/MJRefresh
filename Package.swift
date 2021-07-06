@@ -17,9 +17,13 @@ let package = Package(
                     .process("MJRefresh.bundle")
                 ],
                 cSettings: [
+                    .define("MJ_USEING_SPM"),
                     .headerSearchPath("."),
                     .headerSearchPath("Base"),
-                    .headerSearchPath("Custom")
+                    .headerSearchPath("Custom/Footer/Auto"),
+                    .headerSearchPath("Custom/Footer/Back"),
+                    .headerSearchPath("Custom/Header"),
+                    .headerSearchPath("Custom/Trailer")
                 ])
     ],
     swiftLanguageVersions: [.v5]
